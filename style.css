@@ -3,7 +3,8 @@
    --cor_secundaria: rgba(131, 76, 5, 0.342), green, blue;
    --cor_letras: #000000;
    --cor_destaque: #022ce0;
-   --cor_fundo: #000000;
+   --cor_fundo: #ffffff;
+   --letras_destaque: 2rem;
 
 }
 
@@ -15,7 +16,7 @@
 body {
     /*Estilo:*/
     font-family: 'Times New Roman', Times, serif;
-    font-size: 36px;
+    font-size: var(--letras_destaque);
     font-weight: 700;
 
     /*Cores*/
@@ -24,44 +25,102 @@ body {
 }
 
 .desing_body{
-    background-image: url("img.jpg");
+    background-image: url("img/back_ground.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .container{
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .upper_menu{
-    height: 60px;
+    height: 4rem;
     background-color: var(--cor_predominante);
     display: flex;
     justify-content: left;
     align-items: center; 
 }
 
+.caixa_upper_background{
+    background-color: var(--cor_predominante);
+    text-align: justify;
+    border-radius: 0.5em;
+    /*margin: 0 48rem 0 1rem;*/
+    margin-left: 1rem;
+    padding: 0.5em;
+    max-width: 30rem;
+    min-width: 15rem;
+    width: 50%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
 .itens_menu{
     margin: 4rem;
     display: flex;
-    gap: 40px;
+    gap: 3rem;
 }
 
 
 .codeRunsOnCoffe_link{
-    /*background-color: var(--cor_predominante);*/
-    /*border-radius: 10px;*/
-    padding: 0em;
     color: var(--cor_destaque);
     text-decoration: none;
 }
 
 .menu_link{
-        /*background-color: var(--cor_predominante);*/
-    /*border-radius: 10px;*/
     padding: 0em;
-    color: var(--cor_fundo);
-    font-size: 24px;
+    color: var(--cor_letras);
+    font-size: 1.5rem;
     font-weight: 100;
     text-decoration: none;
+}
+
+.conteudo{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 20px 12px rgba(0, 0, 0, 0.1);
+    max-width: 30rem;
+}
+
+.cards img{
+    border-radius: 1rem;
+    height: 10rem;
+    width: 20rem;
+    object-fit: cover;
+}
+footer{
+    background-color: aqua;
+    border-radius: 1rem;
+    margin: 3rem;
+    padding: 3rem;
+}
+.texto_destaque{
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        color: var(--cor_destaque);
+        font-size: 4rem;
+        font-weight: 700;
+}
+
+.imagens_contatos img{
+    height: 2rem;
 }
