@@ -33,22 +33,33 @@ body {
 .container{
     min-height: 100vh;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.upper_menu{
-    height: 4rem;
+.upper_menu {
     background-color: var(--cor_predominante);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.menu_container {
+    padding: 0 2rem;
     display: flex;
-    justify-content: left;
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links {
+    display: flex;
+    gap: 2rem;
 }
 
 .caixa_upper_background{
     background-color: var(--cor_predominante);
     text-align: justify;
     border-radius: 0.5em;
+    font-size: 2rem;
     /*margin: 0 48rem 0 1rem;*/
     margin-left: 1rem;
     padding: 0.5em;
@@ -89,16 +100,13 @@ body {
 
 .cards{
     display: flex;
-    flex-direction:row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1rem;
     padding: 1rem;
     background-color: #f9f9f9;
     border-radius: 1rem;
-    box-shadow: 0 20px 12px rgba(0, 0, 0, 0.1);
-    max-width: 30rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    justify-content: flex-start;
 }
 
 .cards img{
@@ -124,3 +132,32 @@ footer{
 .imagens_contatos img{
     height: 2rem;
 }
+
+/*para ficar bem no celular:*/
+@media (max-width: 768px) {
+    .menu_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    .caixa_upper_background{
+        justify-content: center;
+        margin: 0%;
+        padding: 0%;
+        width: 70vh;
+    }
+}
+
