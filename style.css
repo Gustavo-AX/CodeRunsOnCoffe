@@ -31,7 +31,10 @@ body {
 }
 
 .container{
+    /*min-height: 100vh;*/
+    min-width: 100vh;
     min-height: 100vh;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -157,8 +160,6 @@ footer{
         justify-content: center;
         margin: 0%;
         padding: 0%;
-        width: 70vh;
-        font-size: 1rem;
     }
 }
 
