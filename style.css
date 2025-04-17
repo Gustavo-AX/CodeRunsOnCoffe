@@ -32,9 +32,8 @@ body {
 
 .container{
     /*min-height: 100vh;*/
-    min-width: 100vh;
-    min-height: 100vh;
-    height: auto;
+    min-width: fit-content;
+    aspect-ratio: 4 / 2;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -62,7 +61,7 @@ body {
     background-color: var(--cor_predominante);
     text-align: justify;
     border-radius: 0.5em;
-    font-size: 2rem;
+    font-size: 1em;
     /*margin: 0 48rem 0 1rem;*/
     margin-left: 1rem;
     padding: 0.5em;
@@ -157,7 +156,7 @@ footer{
     }
 
     .caixa_upper_background{
-        justify-content: center;
+        font-size: 0.5em;
         margin: 0%;
         padding: 0%;
     }
