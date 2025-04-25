@@ -6,69 +6,154 @@
         <title>CodeRunsOnCoffee</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
     
     <body>
-        <header class="upper_menu">
-            <div class="menu_container">
-                <a class="codeRunsOnCoffee_link" href="index.html">CodeRunsOnCoffee</a>
-                <nav class="nav_links">
-                    <a class="menu_link" href="posts.html">Posts</a>
-                    <a class="menu_link" href="links.html">Links</a>
-                    <a class="menu_link" href="aboutMe.html">About me</a>
-                </nav>
-            </div>
+
+        <header class="container_upper_menu">
+
+            <a class="emphasis_letters" href="index.html">CodeRunsOnCoffee</a>
+
+            <nav class="other_links_upper_menu">
+                <a class="upper_menu_link" href="posts.html">Posts</a>
+                <a class="upper_menu_link" href="links.html">Links</a>
+                <a class="upper_menu_link" href="aboutMe.html">About me</a>
+            </nav>
+
         </header>
 
         <main>
-            <section class="container desing_body">
-                <div class="caixa_upper_background">
-                    <H2 class="titulo_caixa">CodeRunsOnCoffee</H2>
-                    <p class="texto_caixa">CodeRunsOnCoffee é um site criado para eu discutir tendências da tecnologia, compartilhar experiências, agregar alguns projetos meus e, acima de tudo, desenvolver minhas habilidades de HTML, CSS e JavaScript.</p>
+
+            <section class="container_banner">
+                <div class="container_upper_background">
+                    <h1>CodeRunsOnCoffee</h1>
+                    <p>CodeRunsOnCoffee é um site criado para eu discutir tendências da tecnologia, compartilhar experiências, agregar alguns projetos meus e, acima de tudo, desenvolver minhas habilidades de HTML, CSS e JavaScript.</p>
                 </div>
             </section>
 
-            <section class= "conteudo texto_destaque">
-                <h6> Sites que me inspiraram: </h6> 
+            <div class="container_below_background">
+                <h1 style="text-align: center;">CodeRunsOnCoffee</h1>
+                <p>CodeRunsOnCoffee é um site criado para eu discutir tendências da tecnologia, compartilhar experiências, agregar alguns projetos meus e, acima de tudo, desenvolver minhas habilidades de HTML, CSS e JavaScript.</p>
+            </div>
 
-                <div class = "cards">
-                    <div>
-                        <p style="font-size: 1rem; color : #000000">DigitalOcean</p>
-                        <a href="www.https://www.digitalocean.com" target="_blank"><img src="img/DigitalOcean.png"></a>
+            <section class="other_sites">
+                <h2 class="emphasis_letters"> Sites que me inspiraram: </h2> 
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <p class="commum_letters">DigitalOcean</p>
+                                <a href="www.https://www.digitalocean.com" target="_blank"><img src="imgs/DigitalOcean.png"></a>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <p class="commum_letters">StackOverFlow</p>
+                                <a href="https://stackoverflow.blog/" target="_blank"><img src="imgs/StackOverFlow.jpg"></a>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <p class="commum_letters">DigitalOcean</p>
+                                <a href="www.https://www.digitalocean.com" target="_blank"><img src="imgs/DigitalOcean.png"></a>
+                            </div>
+                        </div>
+    
                     </div>
-                    <div>
-                        <p style="font-size: 1rem; color : #000000">StackOverFlow</p>
-                        <a href="https://stackoverflow.blog/" target="_blank"><img src="img/StackOverFlow.jpg"></a>
-                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
 
-                <h6> Posts interessantes: </h6>
-                <div class = "cards">
-                    <div>
-                        <p style="font-size: 1rem; color : #000000">Display inline (Medium)</p>
-                        <a href="https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-o-display-inline-block-4e6cba2f19d4" target="_blank"><img src="img/Post1.png"></a>
+                <h2 class="emphasis_letters"> Posts interessantes: </h2> 
+
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <p class="commum_letters">Display inline (Medium)</p>
+                                <a href="https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-o-display-inline-block-4e6cba2f19d4" target="_blank"><img src="imgs/Post1.png"></a>
+                            
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <p class="commum_letters">How to use Flex Box</p>
+                                <a href="https://www.alura.com.br/curso-online-html-css-classes-posicionamento-flexbox?srsltid=AfmBOor-nw4AJTGCqUcaLRGM4NIQ0DzyAXKi18Hx_X1wW53aYahbQ80c" target="_blank"><img src="imgs/Alura.png"></a>
+                            </div>
+                        </div>
+    
                     </div>
-                    <div>
-                        <p style="font-size: 1rem; color : #000000">Flex box</p>
-                        <a href="https://www.alura.com.br/curso-online-html-css-classes-posicionamento-flexbox?srsltid=AfmBOor-nw4AJTGCqUcaLRGM4NIQ0DzyAXKi18Hx_X1wW53aYahbQ80c" target="_blank"><img src="img/Alura.png"></a>
-                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
-                
             </section>
         </main> 
 
-        <footer>
-            <section class = "texto_destaque">
-                <h6>Gostou do conteúdo ou tem outro assunto a tratar?</h6>
-                <h6>Pode me contatar aqui:</h6>
+        <footer class="footer">
+                <h6 class="emphasis_letters">Gostou do conteúdo ou tem outro assunto a tratar?<br>Pode me contatar aqui:</h6>
                 <div class = "imagens_contatos">
-                    <a href="https://instagram.com/_gustavoassis" target="_blank"><img src = "img/Instagram.png"></a>
-                    <a href = "mailto:gustavoassis203@gmail.com" target="_blank"><img src="img/Gmail.png"></a>
-                    <a href="https://www.linkedin.com/in/gustavo-ax/" target="_blank"><img src="img/Linkedin.png"></a>
-                    <a href="https://github.com/Gustavo-AX" target="_blank"><img src ="img/GitHub.png"></a>
+                    <a href="https://instagram.com/_gustavoassis" target="_blank"><img src = "imgs/Instagram.png"></a>
+                    <a href = "mailto:gustavoassis203@gmail.com" target="_blank"><img src="imgs/Gmail.png"></a>
+                    <a href="https://www.linkedin.com/in/gustavo-ax/" target="_blank"><img src="imgs/Linkedin.png"></a>
+                    <a href="https://github.com/Gustavo-AX" target="_blank"><img src ="imgs/GitHub.png"></a>
                 </div>
-                
-            </section>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                loop: false,
+                breakpoints: {
+                    // when window width is >= 500
+                    500: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                    },
+                    // when window width is >= 750px
+                    750: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                    },
+                    // when window width is >= 1000px
+                    1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                    }
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+
+        </script>
     </body>
 </html>

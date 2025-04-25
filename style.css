@@ -1,11 +1,20 @@
-:root{
-   --cor_predominante: rgb(255, 255, 255);
-   --cor_secundaria: rgba(131, 76, 5, 0.342), green, blue;
-   --cor_letras: #000000;
-   --cor_destaque: #022ce0;
-   --cor_fundo: #ffffff;
-   --letras_destaque: 2rem;
+@import url("styles/header.css");
+@import url('styles/banner.css');
+@import url('styles/cards.css');
+@import url('styles/footer.css');
 
+:root{
+    /*Cores:*/
+    --cor_fundo: #ffffff;
+    --cor_predominante: #ffffff;
+    --cor_secundaria: rgb(139, 139, 139);
+    --cor_letras: #000000;
+    --cor_destaque: #000000;
+
+    /*Tamanhos:*/
+    --tamanho_letras: 1.5rem;
+    --tamanho_letras_destaque: 2rem;
+    --peso_letras_destaque: 700;
 }
 
 *{
@@ -13,137 +22,31 @@
     padding: 0%;
 }
 
-body {
-    /*Estilo:*/
+.commum_letters{
+    color:var(--cor_letras);
+    font-size:var(--tamanho_letras);
     font-family: 'Times New Roman', Times, serif;
-    font-size: var(--letras_destaque);
-    font-weight: 700;
-
-    /*Cores*/
-    color: var(--cor_letras);
-    background-color: var(--cor_fundo);
+    font-weight: 300;
+    text-align: center;
 }
 
-.desing_body{
-    background-image: url("img/back_ground.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container{
-    /*min-height: 100vh;*/
-    min-width: fit-content;
-    aspect-ratio: 4 / 2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.upper_menu {
-    background-color: var(--cor_predominante);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
-}
-
-.menu_container {
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav_links {
-    display: flex;
-    gap: 2rem;
-}
-
-.caixa_upper_background{
-    background-color: var(--cor_predominante);
-    text-align: justify;
-    border-radius: 0.5em;
-    font-size: 1em;
-    /*margin: 0 48rem 0 1rem;*/
-    margin-left: 1rem;
-    padding: 0.5em;
-    max-width: 30rem;
-    min-width: 15rem;
-    width: 50%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-word;
-}
-
-.itens_menu{
-    margin: 4rem;
-    display: flex;
-    gap: 3rem;
-}
-
-
-.codeRunsOnCoffee_link{
+.emphasis_letters{
     color: var(--cor_destaque);
+    font-size: var(--tamanho_letras_destaque);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: var(--peso_letras_destaque);
     text-decoration: none;
-}
-
-.menu_link{
-    padding: 0em;
-    color: var(--cor_letras);
-    font-size: 1.5rem;
-    font-weight: 100;
-    text-decoration: none;
-}
-
-.conteudo{
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    border-radius: 1rem;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    justify-content: flex-start;
-}
-
-.cards img{
-    border-radius: 1rem;
-    height: 10rem;
-    width: 20rem;
-    object-fit: cover;
-}
-footer{
-    background-color: aqua;
-    border-radius: 1rem;
-    margin: 3rem;
-    padding: 3rem;
-}
-.texto_destaque{
-        text-align: center;
-        font-family:'Times New Roman', Times, serif;
-        color: var(--cor_destaque);
-        font-size: 4rem;
-        font-weight: 700;
-}
-
-.imagens_contatos img{
-    height: 2rem;
 }
 
 /*para ficar bem no celular:*/
-@media (max-width: 768px) {
-    .menu_container {
+@media (max-width: 750px) {
+    .container_upper_menu {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
 
-    .nav_links {
+    .other_links_upper_menu {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -151,14 +54,13 @@ footer{
         gap: 0.5rem;
     }
 
-    .container{
-        justify-content: center;
-    }
-
-    .caixa_upper_background{
-        font-size: 0.5em;
-        margin: 0%;
-        padding: 0%;
+    .container_upper_background{
+        display: none;
     }
 }
 
+@media (min-width: 750px){
+    .container_below_background{
+        display: none;
+    }
+}

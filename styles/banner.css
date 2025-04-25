@@ -1,0 +1,40 @@
+.container_banner{
+
+    background-image: url("../imgs/Coffee.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100vw;
+    aspect-ratio: 2;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.container_upper_background{
+    /*max-width: 30rem;*/
+    min-width: 20rem;
+    width: 40%;
+    background-color: var(--cor_predominante);
+
+
+    border-radius: 0.5em;
+    font-size: var(--tamanho_letras);
+    margin: 1rem;
+    padding: 0.5em;
+
+    text-align: justify;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.container_below_background{
+    text-align: justify;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}

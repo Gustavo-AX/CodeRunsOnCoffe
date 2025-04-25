@@ -1,0 +1,33 @@
+.other_sites{
+    text-align: center;
+    justify-content: center;
+    margin: 1rem; 
+}
+
+.swiper {
+    border-radius: 1rem;
+    width: 100%;
+    padding: 2rem 0;
+    background-color: rgb(139, 139, 139);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.swiper-slide {
+    width: fit-content;
+}
+
+.card{
+    padding: 0.5rem;
+    width:fit-content;
+    height: fit-content;;
+    text-align: center;  
+    justify-content: center;
+}
+
+.card img{
+    border-radius: 1rem; 
+    width: 20rem;
+    height: 10rem;
+    object-fit: cover;
+}
