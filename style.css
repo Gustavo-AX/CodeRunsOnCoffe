@@ -23,7 +23,7 @@
 }
 
 .commum_letters{
-    color:var(--cor_letras);
+    color: #ffffff;
     font-size:var(--tamanho_letras);
     font-family: 'Times New Roman', Times, serif;
     font-weight: 300;
