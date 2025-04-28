@@ -1,0 +1,49 @@
+.formatação_texto{
+    text-align: justify;
+    word-break:normal;
+    overflow-wrap: break-word;
+}
+
+/*===========================================================*/
+.container_sobre_mim{
+    margin: 1rem;
+    display: flex;
+}
+
+.container_imagem_autor img{
+    max-width: 20rem;
+}
+
+.descrição_sobre_mim{
+    margin: 1rem;
+}
+
+/*===========================================================*/
+
+.container_motivações{
+    margin: 1rem;
+    display: flex;
+}
+
+.container_imagem_motivações img{
+    max-width: 30rem;
+}
+
+.descrição_motivações{
+    margin: 1rem;
+
+}
+/*===========================================================*/
+
+.container_hobbies{
+    margin: 1rem;
+    display: flex;
+}
+
+.container_imagem_hobbies img{
+    max-width: 30rem;
+}
+
+.descrição_hobbies{
+    margin: 1rem;
+}
