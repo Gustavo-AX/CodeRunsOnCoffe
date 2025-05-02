@@ -88,6 +88,18 @@
     .texto_post{
         padding: 0;
     }
+
+    /*links:*/
+    .link{
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .texto_link{
+        padding: 0;
+    }
+
 }
 
 @media (min-width: 750px){
