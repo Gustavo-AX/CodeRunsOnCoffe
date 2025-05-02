@@ -1,7 +1,7 @@
 @import url("styles/header.css");
-@import url('styles/banner.css');
-@import url('styles/cards.css');
 @import url('styles/footer.css');
+@import url('styles/home/banner.css');
+@import url('styles/home/cards.css');
 @import url('styles/about_me/about_me.css');
 @import url('styles/posts/posts.css');
 @import url('styles/links/links.css');
