@@ -1,0 +1,41 @@
+.imagem_site{
+    width: 100vw;
+    justify-content: center;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.main_links{
+    margin: 3rem;
+}
+
+.container_links{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor_secundaria);
+    padding: 4rem;
+    border-radius: 2rem;
+    gap: 2rem;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    padding: 1rem;
+    align-items: center;
+}
+
+.texto_link{
+    padding: 3rem 1rem 3rem 1rem;
+    text-align: justify;
+}
+
+.imagem_link{
+    width: 25rem;
+    aspect-ratio: 4;
+    object-fit: cover;
+    border-radius: 2rem;
+    /*margin: 1rem;*/
+}
